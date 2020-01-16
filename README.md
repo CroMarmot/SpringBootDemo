@@ -2,7 +2,7 @@ https://spring.io/guides
 
 @SpringBootApplication
 
-# maven/gradle
+# maven
 
 maven only now,
 
@@ -21,7 +21,9 @@ buildscript {
 }
 ```
 
-`java -jar build/libs/XXXX.jar`
+`java -jar target/XXXX.jar`
+
+# gradle
 
 ---
 
@@ -40,7 +42,7 @@ buildscript {
 </build>
 ```
 
-`java -jar target/XXXX.jar`
+`java -jar build/libs/XXXX.jar`
 
 # Building a RESTful Web Service
 
@@ -165,3 +167,14 @@ buildscript {
 @Service
 
 @SpringBootApplication
+
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
